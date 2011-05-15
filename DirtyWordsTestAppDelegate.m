@@ -40,7 +40,7 @@
 }
 
 // A single key-down event can invoke a sequence of one or more keyboard action
-// methods. We use _lastKeyboardActionEvent to tell whether aSelector is being
+// methods. We use _lastKeyboardActionEvent to tell whether theSelector is being
 // called for the first time for the current event.
 - (void)updateKeyboardActionDescriptionWithSelector:(SEL)theSelector
 {
