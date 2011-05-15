@@ -14,8 +14,12 @@ Since giving the talk, I've learned that some keystrokes can trigger *multiple* 
 
 The following Apple docs go into detail about how keyboard actions work:
 
-* [Handling Key Events](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/EventOverview/HandlingKeyEvents/HandlingKeyEvents.html), in particular this paragraph in the section "Handling Keyboard Actions and Inserting Text":<blockquote>Responder objects that deal with text, such as text views, have to be prepared to handle key events that can either be characters to insert or keyboard actions. As noted in “The Path of Key Events,” keyboard actions are a special kind of action message that depends on the key bindings mechanism, which binds specific keystrokes (for example, Control-e) to specific commands related to the text (for example, move the insertion point to the end of the current line). These commands are implemented in methods defined by NSResponder to give per-view functional interpretations of those physical keystrokes.</blockquote>
+* [Handling Key Events](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/EventOverview/HandlingKeyEvents/HandlingKeyEvents.html), in particular this paragraph in the section "Handling Keyboard Actions and Inserting Text":
+
+    > Responder objects that deal with text, such as text views, have to be prepared to handle key events that can either be characters to insert or keyboard actions. As noted in “The Path of Key Events,” keyboard actions are a special kind of action message that depends on the key bindings mechanism, which binds specific keystrokes (for example, Control-e) to specific commands related to the text (for example, move the insertion point to the end of the current line). These commands are implemented in methods defined by NSResponder to give per-view functional interpretations of those physical keystrokes.
+
 * [The Path of Key Events](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/EventOverview/EventArchitecture/EventArchitecture.html%23//apple_ref/doc/uid/10000060i-CH3-SW10) -- Linked to from the paragraph quoted above; uses a flowchart to show how key events are dispatched.
+
 * [Text System Defaults and Key Bindings](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html%23//apple_ref/doc/uid/20000468-CJBDEADF) -- Describes the contents of key-bindings dictionary files, how to edit them, and where they live.
 
 See also:
@@ -29,4 +33,4 @@ The "FrameRect() vs. -stroke" window illustrates the fact that -[NSBezierPath st
 
 ## toolTip
 
-I hadn't realized that menu items could have tool tips. To prove it to myself, I gave the Quit menu item a tool tip.
+I hadn't realized that menu items could have tool tips. To prove it to myself, I gave the Quit menu item a tool tip. Not really very instructive, just something I didn't know you could do.
